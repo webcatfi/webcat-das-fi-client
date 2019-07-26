@@ -1,11 +1,10 @@
-# WebCat Domain Availability Service Client Library for .fi Domains (Node.js / TypeScript)
+# WebCat .fi Domain Availability Service Client
 
-Copyright (C) WebCat & Clouden Oy 2019<br/>
-Author Kenneth Falck <kennu@clouden.net>
+Copyright (C) WebCat & Clouden Oy 2019, author Kenneth Falck <kennu@clouden.net>
 
 ## Overview
 
-This is a simple client library for checking whether  a domain is available in the .fi domain registry.
+This is a simple Node.js / TypeScript client library for checking whether  a domain is available in the .fi domain registry.
 
 ## Installation
 
