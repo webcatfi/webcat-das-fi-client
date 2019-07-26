@@ -1,6 +1,6 @@
 {
   "name": "webcat-das-fi-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WebCat Domain Availability Service Client Library for .fi Domains (Node.js / TypeScript)",
   "main": "lib/index.js",
   "directories": {
