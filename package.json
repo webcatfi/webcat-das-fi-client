@@ -1,0 +1,30 @@
+{
+  "name": "webcat-das-fi-client",
+  "version": "0.0.1",
+  "description": "WebCat Domain Availability Service Client Library for .fi Domains (Node.js / TypeScript)",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webcatfi/webcat-das-fi-client.git"
+  },
+  "author": "Kenneth Falck <kennu@clouden.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webcatfi/webcat-das-fi-client/issues"
+  },
+  "homepage": "https://github.com/webcatfi/webcat-das-fi-client#readme",
+  "devDependencies": {
+    "@types/xml2js": "^0.4.4",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "xml2js": "^0.4.19"
+  }
+}
