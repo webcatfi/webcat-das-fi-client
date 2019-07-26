@@ -1,0 +1,18 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ts-node example.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "webcat-das-fi-client": "0.0.1"
+  },
+  "devDependencies": {
+    "ts-node": "^8.3.0"
+  }
+}

@@ -24,17 +24,14 @@ export async function dasQueryDomainAvailable(domain: string): Promise<boolean> 
     '<iris1:lookupEntity registryType="dchk1" entityClass="domain-name" entityName="' + xmlEncode(domain) + '"/>' +
     '</iris1:searchSet>' +
     '</iris1:request>'
-  console.log('Query:', query)
   const response = (await new Promise((resolve, reject) => {
     const socket = dgram.createSocket('udp4')
     socket.on('error', err => {
-      console.error('Socket error:', err)
       reject(err)
       socket.close()
     })
     socket.on('message', (msg, _rinfo) => {
       const response = msg.toString()
-      console.log('Socket response:', response)
       xml2js.parseString(response, (err, doc) => {
         if (err) reject(err)
         else resolve(doc)
@@ -42,16 +39,13 @@ export async function dasQueryDomainAvailable(domain: string): Promise<boolean> 
       socket.close()
     })
     socket.on('close', () => {
-      console.log('Socket closed')
     })
     socket.on('listening', () => {
-      console.log('Socket bound to', socket.address())
       socket.send(query, dasPort, dasServer)
     })
     socket.bind()
   })) as any
   const status = response && response.domain && response.domain.status
-  console.log('Server response:', status, response)
   if (status[0] && status[0].active) {
     // Taken
     return false
