@@ -10,7 +10,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "webcat-das-fi-client": "1.0.0"
+    "webcat-das-fi-client": "1.0.1"
   },
   "devDependencies": {
     "ts-node": "^8.3.0"
