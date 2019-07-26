@@ -1,6 +1,8 @@
 # WebCat .fi Domain Availability Service Client
 
-Copyright (C) WebCat & Clouden Oy 2019, author Kenneth Falck <kennu@clouden.net>
+Copyright (C) WebCat & Clouden Oy 2019, author Kenneth Falck <kennu@clouden.net>.
+
+Released under the MIT license.
 
 ## Overview
 
